@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SocialAppForIbb.UI.props" />
+</Project>

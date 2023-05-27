@@ -1132,6 +1132,84 @@
             "rid": "win"
           }
         }
+      },
+      "SocialAppForIbb.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "SocialAppForIbb.Dal": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialAppForIbb.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialAppForIbb.Core.dll": {}
+        }
+      },
+      "SocialAppForIbb.Dal/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "SocialAppForIbb.Ent": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialAppForIbb.Dal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialAppForIbb.Dal.dll": {}
+        }
+      },
+      "SocialAppForIbb.Ent/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/SocialAppForIbb.Ent.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialAppForIbb.Ent.dll": {}
+        }
+      },
+      "SocialAppForIbb.Rep/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "SocialAppForIbb.Core": "1.0.0",
+          "SocialAppForIbb.Dal": "1.0.0",
+          "SocialAppForIbb.Ent": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialAppForIbb.Rep.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialAppForIbb.Rep.dll": {}
+        }
+      },
+      "SocialAppForIbb.Uow/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "SocialAppForIbb.Core": "1.0.0",
+          "SocialAppForIbb.Dal": "1.0.0",
+          "SocialAppForIbb.Rep": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialAppForIbb.Uow.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialAppForIbb.Uow.dll": {}
+        }
       }
     }
   },
@@ -3452,33 +3530,55 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SocialAppForIbb.Core/1.0.0": {
+      "type": "project",
+      "path": "../SocialAppForIbb.Core/SocialAppForIbb.Core.csproj",
+      "msbuildProject": "../SocialAppForIbb.Core/SocialAppForIbb.Core.csproj"
+    },
+    "SocialAppForIbb.Dal/1.0.0": {
+      "type": "project",
+      "path": "../SocialAppForIbb.Dal/SocialAppForIbb.Dal.csproj",
+      "msbuildProject": "../SocialAppForIbb.Dal/SocialAppForIbb.Dal.csproj"
+    },
+    "SocialAppForIbb.Ent/1.0.0": {
+      "type": "project",
+      "path": "../SocialAppForIbb.Ent/SocialAppForIbb.Ent.csproj",
+      "msbuildProject": "../SocialAppForIbb.Ent/SocialAppForIbb.Ent.csproj"
+    },
+    "SocialAppForIbb.Rep/1.0.0": {
+      "type": "project",
+      "path": "../SocialAppForIbb.Rep/SocialAppForIbb.Rep.csproj",
+      "msbuildProject": "../SocialAppForIbb.Rep/SocialAppForIbb.Rep.csproj"
+    },
+    "SocialAppForIbb.Uow/1.0.0": {
+      "type": "project",
+      "path": "../SocialAppForIbb.Uow/SocialAppForIbb.Uow.csproj",
+      "msbuildProject": "../SocialAppForIbb.Uow/SocialAppForIbb.Uow.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
+      "SocialAppForIbb.Uow >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\canbo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\canbo\\Desktop\\SocialApp\\SocialAppForIbb\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
       "projectName": "SocialAppForIbb.UI",
-      "projectPath": "C:\\Users\\canbo\\Desktop\\SocialApp\\SocialAppForIbb\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
-      "packagesPath": "C:\\Users\\canbo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\canbo\\Desktop\\SocialApp\\SocialAppForIbb\\SocialAppForIbb.UI\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\canbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3486,13 +3586,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3505,6 +3609,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.5, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.5, )"
@@ -3535,7 +3643,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

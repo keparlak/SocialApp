@@ -11,41 +11,38 @@ namespace SocialAppForIbb.Core.Concrete
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly Context context;
-
-        public BaseRepository(Context context)
+        protected readonly DbContext _context;
+        public BaseRepository(DbContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
-        public bool Add(T entity)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().FindAsync(id);
         }
 
-        public bool Delete(T entity)
+        public async Task<List<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().ToListAsync();
         }
 
-        public T Find(int id)
+        public async Task AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _context.Set<T>().AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public List<T> List()
+        public async Task UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public DbSet<T> Set()
+        public async Task DeleteAsync(T entity)
         {
-            return context.Set<T>();
-        }
-
-        public bool Update(T entity)
-        {
-            throw new NotImplementedException();
+            _context.Set<T>().Remove(entity);
+            await _context.SaveChangesAsync();
         }
     }
 }
