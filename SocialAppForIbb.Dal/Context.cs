@@ -20,11 +20,9 @@ namespace SocialAppForIbb.Dal
         {
             // Configure relationships, primary keys, etc.
 
-            modelBuilder.Entity<Follow>().HasKey(f => new
-            {
-                f.FollowingUserId,
-                f.FollowedUserId
-            });
+            modelBuilder.Entity<Follow>()
+                 .HasKey(f => new { f.FollowingUserId, f.FollowedUserId });
+
             // Configure soft delerte using IsDeleted property
 
             modelBuilder.Entity<User>().HasQueryFilter(u => !u.IsDeleted);
@@ -33,10 +31,17 @@ namespace SocialAppForIbb.Dal
             // Configure the relationship between Follow and User entities
 
             modelBuilder.Entity<Follow>()
-                .HasOne(f=> f.FollowedUser)
-                .WithMany() //Modify if there is a collection property on User pointing back to Follow
-                .HasForeignKey(f => f.FollowingUserId)
+                 .HasOne(f => f.FollowingUser)
+                 .WithMany(u => u.Followings)
+                 .HasForeignKey(f => f.FollowingUserId)
+                 .OnDelete(DeleteBehavior.Restrict); // Configure the desired delete behavior
+
+            modelBuilder.Entity<Follow>()
+                .HasOne(f => f.FollowedUser)
+                .WithMany(u => u.Followers)
+                .HasForeignKey(f => f.FollowedUserId)
                 .OnDelete(DeleteBehavior.Restrict); // Configure the desired delete behavior
+
 
             base.OnModelCreating(modelBuilder);
         }

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SocialAppForIbb.Uow"
   ],
-  "SelectedNode": "\\SocialAppForIbb.sln",
+  "SelectedNode": "\\SocialAppForIbb.Uow\\UnitOfWork.cs",
   "PreviewInSolutionExplorer": false
 }

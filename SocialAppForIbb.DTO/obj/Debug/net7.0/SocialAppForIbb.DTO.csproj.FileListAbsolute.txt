@@ -1,0 +1,12 @@
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\bin\Debug\net7.0\SocialAppForIbb.DTO.deps.json
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\bin\Debug\net7.0\SocialAppForIbb.DTO.dll
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\bin\Debug\net7.0\SocialAppForIbb.DTO.pdb
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.dll
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\refint\SocialAppForIbb.DTO.dll
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\SocialAppForIbb.DTO.pdb
+C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.DTO\obj\Debug\net7.0\ref\SocialAppForIbb.DTO.dll

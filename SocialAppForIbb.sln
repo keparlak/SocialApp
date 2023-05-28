@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.Ent", "SocialAppForIbb.Ent\SocialAppForIbb.Ent.csproj", "{9DFF7A58-BD64-4A9A-842E-25B3EB7D1142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.Ent", "SocialAppForIbb.Ent\SocialAppForIbb.Ent.csproj", "{9DFF7A58-BD64-4A9A-842E-25B3EB7D1142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.Dal", "SocialAppForIbb.Dal\SocialAppForIbb.Dal.csproj", "{C713A548-B020-42D7-9ACD-7B8C80DE3ACA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.Dal", "SocialAppForIbb.Dal\SocialAppForIbb.Dal.csproj", "{C713A548-B020-42D7-9ACD-7B8C80DE3ACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.Core", "SocialAppForIbb.Core\SocialAppForIbb.Core.csproj", "{C61BB7FB-159F-469E-9405-5057FC7C900F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.Core", "SocialAppForIbb.Core\SocialAppForIbb.Core.csproj", "{C61BB7FB-159F-469E-9405-5057FC7C900F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.Uow", "SocialAppForIbb.Uow\SocialAppForIbb.Uow.csproj", "{22E432CE-F2FF-4DB2-8570-63141EA5F3EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.Uow", "SocialAppForIbb.Uow\SocialAppForIbb.Uow.csproj", "{22E432CE-F2FF-4DB2-8570-63141EA5F3EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.Rep", "SocialAppForIbb.Rep\SocialAppForIbb.Rep.csproj", "{F0BE0C41-A084-4818-8526-D88076A353F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.Rep", "SocialAppForIbb.Rep\SocialAppForIbb.Rep.csproj", "{F0BE0C41-A084-4818-8526-D88076A353F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.UI", "SocialAppForIbb.UI\SocialAppForIbb.UI.csproj", "{259158AB-2EAA-41D1-BF21-E50A566BA49B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialAppForIbb.UI", "SocialAppForIbb.UI\SocialAppForIbb.UI.csproj", "{259158AB-2EAA-41D1-BF21-E50A566BA49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialAppForIbb.DTO", "SocialAppForIbb.DTO\SocialAppForIbb.DTO.csproj", "{A7F91B7D-D365-4EA6-8FCF-911B295516B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{259158AB-2EAA-41D1-BF21-E50A566BA49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{259158AB-2EAA-41D1-BF21-E50A566BA49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{259158AB-2EAA-41D1-BF21-E50A566BA49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F91B7D-D365-4EA6-8FCF-911B295516B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F91B7D-D365-4EA6-8FCF-911B295516B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F91B7D-D365-4EA6-8FCF-911B295516B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F91B7D-D365-4EA6-8FCF-911B295516B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
