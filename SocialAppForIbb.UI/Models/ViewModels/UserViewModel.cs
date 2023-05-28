@@ -1,6 +1,6 @@
 ﻿namespace SocialAppForIbb.UI.Models.ViewModels
 {
-    public class UserViewModel
+    public class UserViewModel : BaseCRUD
     {
         public int Id { get; set; }
         public string Username { get; set; }

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SocialAppForIbb.UI.Models.ViewModels.PostViewModel>
+@{
+    ViewData["Title"] = "Post List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>Post List</h3>
+
+<div class="d-flex flex-shrink-0">
+    <a asp-action="Create" class="btn btn-sm btn-primary rounded-lg">Create New User</a>
+</div>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Author</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+            <th scope="col">Status</th>
+            <th scope="col">Created Time</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row"> @Html.DisplayFor(modelItem => item.Id)</th>
+                <td> @Html.DisplayFor(modelItem => item.Id)</td>
+                <td> @Html.DisplayFor(modelItem => item.Username)</td>
+                <td> @Html.DisplayFor(modelItem => item.Title)</td>
+                <td> @Html.DisplayFor(modelItem => item.Body)</td>
+                <td> @Html.DisplayFor(modelItem => item.Status)</td>
+                <td> @Html.DisplayFor(modelItem => item.CreatedAt)</td>
+                @*Actions*@
+                <td>
+                    @Html.ActionLink("Update", "Update", new { id=item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>

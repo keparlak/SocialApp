@@ -1,0 +1,29 @@
+﻿@model SocialAppForIbb.UI.Models.ViewModels.UserViewModel
+@{
+    ViewData["Title"] = @Model.PageTitle;
+}
+
+<h1>@Model.PageTitle</h1>
+
+@if (Model.PageTitle == "Create User" || Model.PageTitle == "Edit User")
+{
+    <form method="post" action="@Url.Action(Model.PageTitle == "Edit User" ? "Edit" : "Create", "User")">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="Username" value="@Model.Username" required>
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <input type="text" class="form-control" id="role" name="Role" value="@Model.Role" required>
+        </div>
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <button type="submit" class="btn @Model.BtnClass mt-3">@Model.BtnText</button>
+    </form>
+}
+else if (Model.PageTitle == "Delete User")
+{
+    <form method="post" action="@Url.Action("Delete", new { id = Model.Id })">
+        <p>Are you sure you want to delete this user?</p>
+        <button type="submit" class="btn btn-danger">@Model.BtnText</button>
+    </form>
+}
