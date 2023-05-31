@@ -1,4 +1,6 @@
-﻿namespace SocialAppForIbb.UI.Models.ViewModels
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
+namespace SocialAppForIbb.UI.Models.ViewModels
 {
     public class PostViewModel : BaseCRUD
     {
@@ -11,8 +13,6 @@
         public bool IsDeleted { get; set; }
         public DateTime? DeletedAt { get; set; }
 
-        // Additional properties for UI purposes
-        public string Username { get; set; }
+        
     }
-
 }

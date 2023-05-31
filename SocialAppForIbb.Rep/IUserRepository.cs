@@ -12,5 +12,7 @@ namespace SocialAppForIbb.Rep
     {
         Task<User> GetByUsernameAsync(string username);
         Task<List<User>> GetTopUsersByFollowersAsync(int count);
+        Task<User> GetByUsernameAndPasswordAsync(string username, string password);
+        
     }
 }

@@ -59,6 +59,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.1"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "type": "package",
         "compile": {
@@ -3666,6 +3685,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SocialAppForIbb.Dal": "1.0.0"
@@ -3681,6 +3701,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SocialAppForIbb.Ent": "1.0.0"
@@ -3696,6 +3717,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
@@ -3710,6 +3732,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SocialAppForIbb.Core": "1.0.0",
@@ -3727,6 +3750,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "SocialAppForIbb.Core": "1.0.0",
@@ -3797,6 +3821,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.5": {
+      "sha512": "dS6LPC7ZwJUcxcnB7KBh5L7iO9dbzEuVrNv2YrtiUCclcvBCfCJ/UKlvgHedjd4VcB6bzHcj3sEmFZlfH6qH0Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
@@ -10706,6 +10745,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.5",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
@@ -10714,19 +10754,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\canbo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
+      "projectUniqueName": "C:\\Users\\canbo\\Desktop\\SocialApp-anotherWay\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
       "projectName": "SocialAppForIbb.UI",
-      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.UI\\obj\\",
+      "projectPath": "C:\\Users\\canbo\\Desktop\\SocialApp-anotherWay\\SocialAppForIbb.UI\\SocialAppForIbb.UI.csproj",
+      "packagesPath": "C:\\Users\\canbo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\canbo\\Desktop\\SocialApp-anotherWay\\SocialAppForIbb.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\canbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10734,15 +10779,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\keparlak\\SocialApp\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj"
+            "C:\\Users\\canbo\\Desktop\\SocialApp-anotherWay\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj": {
+              "projectPath": "C:\\Users\\canbo\\Desktop\\SocialApp-anotherWay\\SocialAppForIbb.Uow\\SocialAppForIbb.Uow.csproj"
             }
           }
         }
@@ -10757,6 +10802,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[7.0.5, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.5, )"
@@ -10795,7 +10844,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,49 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SocialAppForIbb.UI
 build_property.RootNamespace = SocialAppForIbb.UI
-build_property.ProjectDir = C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.UI\
+build_property.ProjectDir = C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.UI\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.UI
+build_property.MSBuildProjectDirectory = C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Home/Index.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Home/Privacy.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Post/List.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Post/Crud.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcnVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Post/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Shared/Error.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/User/Crud.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/User/Crud.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcnVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/User/List.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/User/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/_ViewImports.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/_ViewStart.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/Source/Repos/keparlak/SocialApp/SocialAppForIbb.UI/Views/Shared/_Layout.cshtml]
+[C:/Users/canbo/Desktop/SocialApp-anotherWay/SocialAppForIbb.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gbh7yox6ho

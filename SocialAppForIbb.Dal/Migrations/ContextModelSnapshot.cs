@@ -96,6 +96,10 @@ namespace SocialAppForIbb.Dal.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -29,6 +29,12 @@ namespace SocialAppForIbb.Rep
                 .Take(count)
                 .ToListAsync();
         }
+        public async Task<User> GetByUsernameAndPasswordAsync(string username, string password)
+        {
+            return await _context.Set<User>().FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
+        }
+
+        
 
     }
 }

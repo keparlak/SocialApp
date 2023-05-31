@@ -1,17 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using SocialAppForIbb.Ent;
 using SocialAppForIbb.UI.Models.ViewModels;
 using SocialAppForIbb.Uow;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace SocialAppForIbb.UI.Controllers
 {
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly string _jwtSecretKey;
 
         public UserController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+            _jwtSecretKey = "your_secret_key";
+
         }
 
         public async Task<IActionResult> List()
@@ -119,8 +127,8 @@ namespace SocialAppForIbb.UI.Controllers
 
                     await _unitOfWork.Users.UpdateAsync(existingUser);
                     await _unitOfWork.SaveChangesAsync();
-
                     return RedirectToAction("List");
+
                 }
             }
 
@@ -143,5 +151,102 @@ namespace SocialAppForIbb.UI.Controllers
 
             return RedirectToAction("List");
         }
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult Login()
+        {
+            UserViewModel model = new UserViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(UserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await _unitOfWork.Users.GetByUsernameAndPasswordAsync(model.Username, model.Password);
+
+                if (user != null)
+                {
+                    string token = GenerateJwtToken(user);
+
+                    
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Geçersiz kullanıcı adı veya şifre.");
+                }
+            }
+
+            
+            return View(model);
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult Register()
+        {
+            UserViewModel model = new UserViewModel();
+            return View(model);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Register(UserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                User existingUser = await _unitOfWork.Users.GetByUsernameAsync(model.Username);
+
+                if (existingUser != null)
+                {
+                    ModelState.AddModelError("", "Bu kullanıcı adı zaten kullanılıyor.");
+                    return View(model);
+                }
+
+                User newUser = new User
+                {
+                    Username = model.Username,
+                    Password = model.Password,
+                    Role = model.Role,
+                    CreatedAt = DateTime.Now,
+                    IsDeleted = false
+                };
+
+                await _unitOfWork.Users.AddAsync(newUser);
+                await _unitOfWork.SaveChangesAsync();
+
+                string token = GenerateJwtToken(newUser);
+
+                
+                return RedirectToAction("Login");
+            }
+
+            // Hatalı register durumunda Login sayfasına geri dön
+            return RedirectToAction("Login");
+        }
+
+        private string GenerateJwtToken(User user)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_jwtSecretKey);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.Username),
+                    new Claim(ClaimTypes.Role, user.Role)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
     }
 }
+

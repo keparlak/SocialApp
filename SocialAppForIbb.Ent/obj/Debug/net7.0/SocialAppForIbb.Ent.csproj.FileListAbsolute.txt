@@ -12,3 +12,17 @@ C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.Ent\obj\D
 C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.pdb
 C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.genruntimeconfig.cache
 C:\Users\Administrator\Source\Repos\keparlak\SocialApp\SocialAppForIbb.Ent\obj\Debug\net7.0\ref\SocialAppForIbb.Ent.dll
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\bin\Debug\net7.0\SocialAppForIbb.Ent.deps.json
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\bin\Debug\net7.0\SocialAppForIbb.Ent.runtimeconfig.json
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\bin\Debug\net7.0\SocialAppForIbb.Ent.dll
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\bin\Debug\net7.0\SocialAppForIbb.Ent.pdb
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.csproj.AssemblyReference.cache
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.AssemblyInfoInputs.cache
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.AssemblyInfo.cs
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.csproj.CoreCompileInputs.cache
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.dll
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\refint\SocialAppForIbb.Ent.dll
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.pdb
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\SocialAppForIbb.Ent.genruntimeconfig.cache
+C:\Users\canbo\Desktop\SocialApp-anotherWay\SocialAppForIbb.Ent\obj\Debug\net7.0\ref\SocialAppForIbb.Ent.dll
